@@ -22,3 +22,8 @@ This *mandatory* file describes both the table of content and the programming pr
 -[ ] Sleep and eat
 -[x] Easy, this is 42
 -[ ] Peace & Love
+
+
+# Exercise
+
+@[Luke, how many stars are there in these galaxies?]({"stubs": ["main.cpp"], "command": "roscore"})
