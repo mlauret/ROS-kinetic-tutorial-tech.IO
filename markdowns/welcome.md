@@ -26,4 +26,4 @@ This *mandatory* file describes both the table of content and the programming pr
 
 # Exercise
 
-@[Luke, how many stars are there in these galaxies?]({"stubs": ["main.cpp"], "command": "roscore"})
+@[Luke, how many stars are there in these galaxies?]({"stubs": ["test.cpp"], "command": "roscore"})
