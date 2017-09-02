@@ -26,4 +26,4 @@ This *mandatory* file describes both the table of content and the programming pr
 
 # Exercise
 
-@[Test]({"stubs": ["test.cpp"], "command": "echo TECHIO> terminal -i source /opt/ros/kinetic/setup.bash; roscore"})
+@[Test]({"stubs": ["test.cpp"], "command": "echo TECHIO> terminal -i source /opt/ros/kinetic/setup.bash"})
