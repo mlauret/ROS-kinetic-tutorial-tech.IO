@@ -26,4 +26,4 @@ This *mandatory* file describes both the table of content and the programming pr
 
 # Exercise
 
-@[Test]({"command": "python -c \"import time;print 'TECHIO> terminal'; time.sleep(1)\""})
+@[Test]({"command": "python -c \"import time;print 'TECHIO> terminal'; time.sleep(10)\""})
