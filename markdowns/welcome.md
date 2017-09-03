@@ -26,4 +26,4 @@ This *mandatory* file describes both the table of content and the programming pr
 
 # Exercise
 
-@[Test]({"command": "python open_terminal.py"})
+@[Test]({"command": "echo TECHIO> terminal"})
