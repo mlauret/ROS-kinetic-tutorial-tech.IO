@@ -26,4 +26,3 @@ This *mandatory* file describes both the table of content and the programming pr
 
 # Exercise
 
-@[Test]({"stubs": ["test.cpp"], "command": "source /opt/ros/kinetic/setup.bash; mkdir -p ./catkin_ws/src/; cd ./catkin_ws/src; catkin_init_workspace .; catkin_create_pkg ros_tutorial roscpp std_msgs; cp ../../test.cpp ros_tutorial/src/.; cp ../../CMakeLists.txt ros_tutorial/.; cd ../; catkin_make; source devel/setup.bash; python open_terminal.py"})
