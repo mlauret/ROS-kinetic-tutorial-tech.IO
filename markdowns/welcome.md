@@ -26,4 +26,4 @@ This *mandatory* file describes both the table of content and the programming pr
 
 # Exercise
 
-@[Test]({"command": "echo TECHIO> terminal"})
+@[Test]({"command": "echo TECHIO> terminal; sleep 1"})
