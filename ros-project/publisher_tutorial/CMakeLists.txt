@@ -8,7 +8,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp std_msgs)
 catkin_package(
    INCLUDE_DIRS include ##Where to find include dirs
    LIBRARIES ${PROJECT_NAME} #Exported libraries from the project
-   CATKIN_DEPENDS roscpp nodelet #Other catkin project this project depends on
+   CATKIN_DEPENDS roscpp std_msgs #Other catkin project this project depends on
    DEPENDS ) #Other non-catkin project this project depends on
 
 add_executable(publisher_tutorial src/publisher_tutorial.cpp)
