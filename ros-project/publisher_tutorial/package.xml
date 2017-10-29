@@ -1,5 +1,5 @@
 <package format="2">
-  <name>publisher_tutorial</name>
+  <name>ros_publisher_tutorial</name>
   <version>1.0.0</version>
   <description>
   This package is the publisher tutorial from tech.io
