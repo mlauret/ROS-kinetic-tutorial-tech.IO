@@ -1,6 +1,7 @@
 #!/bin/bash
 echo TECHIO> terminal
 mkdir catkin_workspace
+cd catkin_workspace
 mkdir src
 cd src
 catkin_init_workspace .
