@@ -15,11 +15,14 @@ int main(int argc, char **argv)
   //Define the rate for publishing the message
   ros::Rate loop_rate(10);
 
+  //Define the message to send
+  std_msgs::String msg;
+  
   //Loop while roscore is open
   while (ros::ok())
   {
-    //Define a message to send
-    std_msgs::String msg = "Hello World";
+    //fill the message
+    msg.data = "Hello World";
     //publish the message
     chatter_pub.publish(msg);
     //Wait for 1/loop_rate seconds, to publish at 10Hz
