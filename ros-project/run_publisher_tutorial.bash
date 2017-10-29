@@ -10,4 +10,4 @@ cp -r ../publisher_tutorial/ src/.
 catkin_make
 source devel/setup.bash
 roscore&
-rosrun publisher_tutorial publisher tutorial
+rosrun publisher_tutorial publisher_tutorial
