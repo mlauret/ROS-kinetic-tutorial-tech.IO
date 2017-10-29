@@ -10,3 +10,4 @@ projects:
   ros:
     root: /ros-project
     runner: ros:kinetic-ros-core
+    buildCommand: ls
