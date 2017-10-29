@@ -25,5 +25,5 @@ This *mandatory* file describes both the table of content and the programming pr
 
 
 # Terminal
-@[Luke, how many stars are there in these galaxies?]({"command": "python3 open_terminal.py"})
+@[Luke, how many stars are there in these galaxies?]({"command": "echo TECHIO> terminal"})
 
