@@ -25,5 +25,5 @@ This *mandatory* file describes both the table of content and the programming pr
 
 
 # Terminal
-@[Press run to open a terminal?]({"command": "echo TECHIO> terminal"})
+@[Press run to open a terminal]({"command": "echo TECHIO> terminal"})
 
