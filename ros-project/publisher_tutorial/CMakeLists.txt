@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(ros_publisher_tutorial)
+project(publisher_tutorial)
 
 ## Find catkin and any catkin packages
 find_package(catkin REQUIRED COMPONENTS roscpp std_msgs) # declare all required package here (must match package.xml <depend>)
