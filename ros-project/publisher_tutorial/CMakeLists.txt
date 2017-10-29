@@ -6,7 +6,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp std_msgs)
 
 ## Declare the catkin package specific information
 catkin_package(
-   INCLUDE_DIRS include ##Where to find include dirs
+   INCLUDE_DIRS ##Where to find include dirs from our package
    LIBRARIES ${PROJECT_NAME} #Exported libraries from the project
    CATKIN_DEPENDS roscpp std_msgs #Other catkin project this project depends on
    DEPENDS ) #Other non-catkin project this project depends on
