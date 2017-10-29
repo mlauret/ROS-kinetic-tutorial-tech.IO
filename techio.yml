@@ -10,4 +10,4 @@ projects:
   ros:
     root: /ros-project
     runner: ros:kinetic-ros-core
-    buildCommand: git clone https://github.com/sourcelair/xterm.js && cd xterm.js && sudo apt install -y nodejs npm && npm install
+    buildCommand: git clone https://github.com/sourcelair/xterm.js && cd xterm.js && apt install -y nodejs npm && npm install
