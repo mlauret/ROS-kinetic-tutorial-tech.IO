@@ -10,4 +10,5 @@ cd ..
 cp -r ../publisher_tutorial/ src/.
 catkin_make
 source devel/setup.bash
-rosrun publisher_tutorial publisher_tutorial
+rosrun publisher_tutorial publisher_tutorial &
+rostopic echo /chatter
