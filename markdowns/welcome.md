@@ -25,5 +25,5 @@ This *mandatory* file describes both the table of content and the programming pr
 
 
 # Terminal
-@[Press run to open a terminal]({"command": "ls"})
+@[Press run to open a terminal]({"stubs": ["publisher_tutorial/src/publisher_tutorial.cpp"] "command": "./run_publisher_tutorial.bash"})
 
