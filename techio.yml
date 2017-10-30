@@ -2,10 +2,12 @@ title : Introduction to ROS Kinetic Kame
 
 # Table of content
 plan:
-  - title: Welcome # Set the page title (only displayed if your contribution has several pages)
-    statement: markdowns/welcome.md # Set the file path to the page 
-#  - title: Another Page
-#    statement: markdowns/another-page.md
+  - title: Welcome 
+    statement: markdowns/1-introduction/introduction.md
+  - title: What is ROS ?
+    statement: markdowns/2-what-is-ROS/what-is-ROS.md
+  - title: 1: Publisher
+    statement: markdowns/3-publisher/publisher.md
 projects:
   ros:
     root: /ros-project
