@@ -6,8 +6,8 @@ plan:
     statement: markdowns/1-introduction/introduction.md
   - title: What is ROS ?
     statement: markdowns/2-what-is-ROS/what-is-ROS.md
-  - title: 1: Publisher
-    statement: markdowns/3-publisher/publisher.md
+  - title: 4: Publisher
+    statement: markdowns/4-publisher/publisher.md
 projects:
   ros:
     root: /ros-project
