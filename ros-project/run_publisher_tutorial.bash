@@ -1,6 +1,6 @@
 #!/bin/bash
 roscore &
-echo TECHIO> terminal
+echo "TECHIO> terminal"
 mkdir catkin_workspace
 cd catkin_workspace
 mkdir src
