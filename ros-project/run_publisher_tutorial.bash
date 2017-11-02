@@ -1,6 +1,6 @@
 #!/bin/bash
 roscore &
-echo "TECHIO> terminal"
+echo "TECHIO> terminal -i 'source /opt/ros/kinetic/setup.bash'"
 mkdir catkin_workspace
 cd catkin_workspace
 mkdir src
