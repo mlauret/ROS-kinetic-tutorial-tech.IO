@@ -6,6 +6,8 @@ Meaning : ROS is a tool, a middleware, to connect every hardware to every applic
 > A middleware ?
 Yes, a middleware, a software layer between the hardware (Computer, Robot, Sensors, etc.) and the application ( [Follow an object](https://www.youtube.com/watch?v=4B_aEEaosyw), [Pilot a helicopter](https://www.youtube.com/watch?v=nMAK3uQ3rCc), [etc.](https://vimeo.com/146183080)).
 
+## Exemple
+
 You can see ROS as a plumbing system : 
 - Your application is the Tap
 - ROS is the Pipe, Tank and Valve.
@@ -31,4 +33,21 @@ The main power of ROS is the community. Since 10 years, the community have devel
 
 Fun fact : I didn't have to code a single line of C++ or Python for mapping a Mars's zone with the help of [VREP](http://www.coppeliarobotics.com/) and [Octomap](http://wiki.ros.org/octomap_server) : [Result in this video](https://www.youtube.com/watch?v=2V11_CEwZM8&t=3s).
 
-But more than that, ROS give you a set of tools to allow you to create, install, uninstall and share packages. So if a package doesn't exist, you can always create it (and share it)
+But more than that, ROS give you a set of tools to allow you to create, install, uninstall and share packages. So if a package doesn't exist, you can always create it (and share it, if you want).
+The main coding language are C++ and Python. You can also use Lisp and other language, but some setup will be required.
+
+# What do I need for this tutorial ?
+
+You will need : 
+- Some times and courage
+- C++ and/or Python skills
+- #if C++_Skills #define [Boost_skills](http://www.boost.org/) #endif
+
+All ROS infrastructure will be given to you by tech.io with the help of docker image. No install required. Just code and run. Awesome.
+
+### Are you ready ? you can go straight to the next course or learn a little bit more about ROS : 
+
+# History
+
+I'm lazy and you can go here to see the full history : http://www.ros.org/history/
+
