@@ -17,7 +17,9 @@ The basics of ROS consist of :
   - Launch files
 + Publisher
 + Subscriber
++ Logging
 + Messages
++ Parameters
 + Services
   - Client
   - Server
@@ -28,12 +30,16 @@ The basics of ROS consist of :
   - Action Definition
 
 These are the minimal knowledge to build/run/debug your package and nodes, and to play a little with robots.
+
 > Wait, I didn't learn anything about robot in the basics, you lied to me!
 
 Actually, you did, but let's dig deeper on how to connect with robot :
 
 ## The Intermediate :
 
++ Introduction to Gazebo simulator
 + How to connect to a robot
-+ 
++ Bag Files
++ Vizualizing data
++ Introduction to GUI creation
  
