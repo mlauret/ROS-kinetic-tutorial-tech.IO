@@ -78,4 +78,22 @@ Now let's see if you can find :
 -[ ] msg/ srv/ src/ package.xml CMakeLists.txt
 -[ ] src/ scripts/ CmakeLists.txt
 
+?[Where is the package "std_msgs" ?]
+-[ ] /usr/share/std_msgs
+-[x] /opt/ros/kinetic/share/std_msgs
+-[ ] /home/ros/catkin_ws/src/std_msgs
+-[ ] /opt/ros/std_msgs
+
+?[On which package "trajectory_msgs" does NOT depends ?]
+-[ ] std_msgs
+-[ ] catkin
+-[ ] genpy
+-[x] rosbuild
+
+?[What package does NOT use the package "rosparam" ?]
+-[ ] roswtf
+-[ ] roslaunch
+-[ ] rostest
+-[x] rosftw
+
 
