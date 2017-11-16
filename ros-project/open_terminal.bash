@@ -1,5 +1,5 @@
 roscore &
-echo "TECHIO> terminal -i 'source /opt/ros/kinetic/setup.bash && mkdir /home/ros && cd /home/ros'" 2>&1 /dev/null
+echo "TECHIO> terminal -i 'source /opt/ros/kinetic/setup.bash && mkdir /home/ros && cd /home/ros && clear'" 
 while true
 do
 sleep 1
