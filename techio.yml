@@ -6,14 +6,16 @@ plan:
     statement: markdowns/1-introduction/introduction.md
   - title: What is ROS ?
     statement: markdowns/2-what-is-ROS/what-is-ROS.md
+  - title: Installation
+    statement: markdowns/3-installation/installation.md
   - title: Nodes
-    statement: markdowns/3-nodes/nodes.md
-  - title: CLI
-    statement: markdowns/4-cli/cli.md
+    statement: markdowns/4-nodes/nodes.md
   - title: Packages
     statement: markdowns/5-package/package.md
+  - title: CLI
+    statement: markdowns/6-cli/cli.md
   - title: Publisher
-    statement: markdowns/6-publisher/publisher.md
+    statement: markdowns/7-publisher/publisher.md
 projects:
   ros:
     root: /ros-project
