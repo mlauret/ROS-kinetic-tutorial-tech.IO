@@ -27,6 +27,7 @@ You have a lot of CLI tools shipped with ROS. Here is some of them :
 - rostopic
 - rosversion
 - catkin_make
+
 There is some other tools used by ros in CLI, but since I never saw them used by anybody, and some of them are deprecated (officialy or not), I will not describe them : 
 - rospd
 - rosd
@@ -38,4 +39,4 @@ There is some other tools used by ros in CLI, but since I never saw them used by
 
 > Wait, where is catkin ?
 
-Catkin Tools aim to be a replacement for catkin_make.
+Catkin Tools aim to be a replacement for catkin_make. It still in beta. Therefore, it's not shipped with ROS. You need to install it manually. This tutorial will give you catkin tools instead of catkin_make, but the command are mostly the same (catkin_make is catkin build, etc.)
