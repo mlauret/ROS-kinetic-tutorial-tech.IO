@@ -7,7 +7,7 @@ Before beeing a set of packages, nodes, and compilation error, your ROS environn
 Here is an example of CLI for a ROS environmnent : 
 @[Example : Click run to open a terminal]({"command": "./open_terminal.bash"})
 
-> Ok cool I have a terminal, I feel like a hacker, but what do I do with it now ?
+> Ok cool, I have a terminal, I feel like a hacker, now what ?
 
 You have a lot of CLI tools shipped with ROS. Here is some of them : 
 
