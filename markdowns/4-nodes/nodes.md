@@ -80,9 +80,3 @@ They all begin with a **letter**, a **/** or a **~**
 You will learn later that a node can be much more than that (actually, 5 more things covered in this tutorial : nodelets, service client/server, action client/server), but this is enough at the moment. 
 
 # Quizz time !
-
-?[?]
--[ ] There is no answer to that!
--[ ] Sleep and eat
--[x] Easy, this is 42
--[ ] Peace & Love
