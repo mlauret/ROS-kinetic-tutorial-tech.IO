@@ -73,10 +73,10 @@ Try in this terminal theses commands :
 Now let's see if you can find : 
 
 ?[What is the content of the directory of the package "rosbag"]
--[x] cmake/ package.xml
--[ ] cmake/ package.xml CMakeLists.txt
--[ ] msg/ srv/ src/ package.xml CMakeLists.txt
--[ ] src/ scripts/ CmakeLists.txt
+-[x] cmake/ and package.xml
+-[ ] cmake/, package.xml and CMakeLists.txt
+-[ ] msg/, srv/, src/, package.xml and CMakeLists.txt
+-[ ] src/, scripts/ and CmakeLists.txt
 
 ?[Where is the package "std_msgs" ?]
 -[ ] /usr/share/std_msgs
