@@ -43,11 +43,15 @@ The main coding language are C++ and Python. You can also use Lisp and other lan
 You will need : 
 - Some times and courage
 - C++ and/or Python skills
-- #if C++_Skills #define [Boost_skills](http://www.boost.org/) #endif
 
-All ROS infrastructure will be given to you by tech.io with the help of docker image. No install required. Just code and run. Awesome.
+#### Should I use  Python or C++ ?
 
-### Are you ready ? you can go straight to the next course or learn a little bit more about ROS : 
+Most people will tell you to use Python : It's easier, faster to learn and code, cleaner when you are a beginner.
+
+I recommend you to choose your favorite language (You can even use Lisp in ROS but I will not cover it in the tutorial), C++ will allow you to code a [faster application](https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=python3&lang2=gpp), but a bad C++ code will be much more slower and difficult to maintain than a simple python code.
+
+
+### Are you ready ? you can go straight to the next chapter or learn a little bit more about ROS : 
 
 # History
 
