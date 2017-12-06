@@ -18,14 +18,18 @@ A Subscriber will ask the roscore to send to it all messages of a certain `type`
 - Node :  I need all message of type **"std_msgs/String"**.
 - Node :  Who come from the topic **"/chatter"**.
 - roscore : Ok!
+ 
 Later...
+
 - roscore : There is a message !
 - Node : Thanks you bro, I received it.
 
 In ROS, here how we call this  :
 - Node : Initialize and register the node name **"super_subscriber"** on roscore.
 - Node : Subscribe to the topic **"/chatter"** with the message type **"std_msgs/String"**.
+
 Later... 
+
 - roscore : A message of type **"std_msgs/String"** on the topic **"/chatter"** was published.
 - Node : Received the message.
 
@@ -34,7 +38,9 @@ A Publisher will need to register himself as a publisher and publish the message
 - Node : I'm the node **"cool_publisher"**.
 - Node : I will send message of type **"std_msgs/String"** on the topic **"/chatter"**
 - roscore : Ok, I keep me in touch when you send a message.
+
 Later...
+
 - Node : I want to send the message **"Hello"**.
 - roscore : Ok, message send.
 
@@ -42,7 +48,9 @@ Again, in ROS tongue :
 - Node : Initialize and register the node name **"cool_publisher"** on roscore.
 - Node : Create a publisher **"pub"** and Advertise on the topic **"/chatter"** with the message type **"std_msgs/String"**
 - roscore : Ok, no error.
+
 Later...
+
 - Node : Build the message **"msg"** who contain : **"data: Hello"** and send it trought **"pub"**
 - roscore : Ok, no error.
 
