@@ -1,1 +1,65 @@
 
+This chapter is totally optional, you can skip directly to the next one, it's just here to help you install ROS.
+
+Also, this installation is for Ubuntu 15.10 or 16.04, other distribution have different ways of installation.
+
+So, open a terminal and follow these step : 
+
+## Step 1 : Link your distribution to the ROS package repository
+
+If you don't know, all linux distribution works with packages repositories. It's like the "Google play store" of Linux (more free). But in the case of linux, everyone can create their own store to publish application. By default, you only have access to the main ubuntu repositories, with secutiry update and many useful application.
+
+All ROS developper send their application to a unique store, the ROS repository. To add it in Linux, you need to create a `sources.list` file in your linux distribution.
+
+To create this file just follow theses steps : 
+1. `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
+
+And that all.
+
+This complicated line will : 
+1. Give you the superuser right to write file in critical system directories with `sudo`
+2. Launch a shell command with `sh -c`
+3. The shell command is `echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list`, it will write the line "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" in /etc/apt/sources.list.d/ros-latest.list
+4. But there is a catch : ` $(lsb_release -sc) ` will expand and will change to your distribution name, in our case "xenial" (codename for ubuntu 16.04) or "wily" (for 15.10)
+
+And that all for linking you linux to the ROS package repository.
+
+## Step 2 : Get the public key for updating your package
+
+Linux will throw an error if you want to update package from the ROS package repository, because even if you added them, linux don't trust them because they may be compromised by a malicious hacker. You need to add the ROS package repository public key, which is a key used to check if the package is signed by ROS or by an hacker (which will throw an error).
+
+You can just launch `sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116`
+
+This will add the public key from ROS to your distribution, and will definitely let you install ROS packages from the repository.
+
+## Step 3 : Update your package list
+
+Because linux know every installable application in a list with the command `apt-get` (or simply `apt`), you need to tell him to update the package list every time you add a repository or from time to time when a new package is available in the repository.
+
+Just run the command `sudo apt-get update` and the package list will update will all ROS packages.
+
+I also recommand you to run this command every month, to get the list of all new packages or updatable application.
+
+## Step 4 : Install ROS
+
+If you know a little bit about Ubuntu, you will know that there is a command to install application : `sudo apt-get install`.
+Now, you can install ros with the command : 
+
+`sudo apt-get install ros-kinetic-desktop-full`
+
+it will download all mandatory package for ROS, plus a lot of usefull packages for debugging and simulating robot.
+
+Now go take a coffee because the installation is very long.
+
+## Step 5 : Initialize rosdep
+
+Rosdep is a useful command in ROS, that allow you to download all dependencies from a package.
+
+Example : a friend of you gave you a custom package he built, who work well, but he didn't gave you all the dependencies needed by is package. By running `rosdep`, you will directly install all dependencies without about worrying to install them manually.
+
+To initialize rosdep, just run : 
+`sudo rosdep init`
+`rosdep update`
+
+
+
