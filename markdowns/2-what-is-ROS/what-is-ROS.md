@@ -2,7 +2,7 @@
 
 `ROS is an open-source, meta-operating system for your robot` - http://wiki.ros.org/ROS/Introduction
 
-Meaning : ROS is a tool, a middleware, to connect every hardware to every application
+Meaning : ROS is a tool, a middleware, to connect any hardware to any application
 
 > A middleware ?
 
