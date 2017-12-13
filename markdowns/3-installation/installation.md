@@ -55,7 +55,7 @@ Now go take a coffee because the installation is very long.
 
 Rosdep is a useful command in ROS, that allow you to download all dependencies from a package.
 
-Example : a friend of you gave you a custom package he built, who work well, but he didn't gave you all the dependencies needed by is package. By running `rosdep`, you will directly install all dependencies without worrying to install them manually.
+Example : a friend of you gave you a custom package he built, who work well, but he didn't gave you all the dependencies needed by is package to be builded. By running `rosdep` (not this command, but a longer command described [here](http://wiki.ros.org/rosdep)), you will directly install all dependencies without worrying to install them manually.
 
 To initialize rosdep, just run : 
 `sudo rosdep init`
@@ -82,10 +82,31 @@ Now, everytime you open a terminal, you will always have the ROS related command
 ## Quizz time
 (because people remember better when they are questionned)
 
+?[What do the command `rosdep` ?]
+-[x] It display a help screen
+-[ ] It install my package dependencies
+-[ ] It install all the dependencies of the packages in my workspace 
+-[ ] It install all the new packages from the sources.list
+
 ?[I'm on Ubuntu 16.04 and I installed ROS. What is written in the file /etc/apt/sources.list.d/ros-latest.list ?]
 -[ ] echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main"
 -[ ] echo "deb http://packages.ros.org/ros/ubuntu wily main"
 -[ ] echo "deb http://packages.ros.org/ros/ubuntu xenial main"
 -[ ] deb http://packages.ros.org/ros/ubuntu wily main
 -[x] deb http://packages.ros.org/ros/ubuntu xenial main
+
+?[What do the command `sudo apt-get update` ?]
+-[ ] It download all new package from the sources.list
+-[x] It update the package list
+-[ ] It install all the new packages from the ROS package list
+-[ ] It install all the new packages from the sources.list
+
+?[What do the command `rosdep install --from-paths src --ignore-src -r -y` ?]
+-[ ] It display a help screen
+-[ ] It install my package dependencies
+-[x] It install all the dependencies of the packages in my workspace 
+-[ ] It install all the new packages from the sources.list
+
+
+
 
