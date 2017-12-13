@@ -1,6 +1,8 @@
 
 This chapter is totally optional, you can skip directly to the next one, it's just here to help you install ROS.
 
+The complete installation procedure without explanation is available [here](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+
 Also, this installation is for Ubuntu 15.10 or 16.04, other distribution have different ways of installation.
 
 So, open a terminal and follow these step : 
