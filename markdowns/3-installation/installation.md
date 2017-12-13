@@ -55,11 +55,27 @@ Now go take a coffee because the installation is very long.
 
 Rosdep is a useful command in ROS, that allow you to download all dependencies from a package.
 
-Example : a friend of you gave you a custom package he built, who work well, but he didn't gave you all the dependencies needed by is package. By running `rosdep`, you will directly install all dependencies without about worrying to install them manually.
+Example : a friend of you gave you a custom package he built, who work well, but he didn't gave you all the dependencies needed by is package. By running `rosdep`, you will directly install all dependencies without worrying to install them manually.
 
 To initialize rosdep, just run : 
 `sudo rosdep init`
 `rosdep update`
+
+## Step 6 : Automatize your environment
+
+Right now, you can use ROS package and build your own. But everytime you open a terminal, you will have to type : 
+
+`source /opt/ros/kinetic/setup.bash`
+
+Which is pretty annoying and you can totally automatize this command by adding it in your `.bashrc`.
+
+.bashrc is a file in Ubuntu that  is launched everytime a new terminal is opened. It contains various commands related to the autocompletion (with "tab-tab"), terminal color and many other things. Don't touch it when you don't know what you are doing.
+
+You can simply run the command : `echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc`
+
+If you remember the step 1, you know that this command will add the `source` commands at the end of the file .bashrc
+
+Now, everytime you open a terminal, you will always have the ROS related commands without manually sourcing the ROS environment.
 
 
 
