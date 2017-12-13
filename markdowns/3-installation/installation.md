@@ -79,3 +79,13 @@ Now, everytime you open a terminal, you will always have the ROS related command
 
 
 
+## Quizz time
+(because people remember better when they are questionned)
+
+?[I'm on Ubuntu 16.04 and I installed ROS. What is written in the file /etc/apt/sources.list.d/ros-latest.list ?]
+-[ ] echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main"
+-[ ] echo "deb http://packages.ros.org/ros/ubuntu wily main"
+-[ ] echo "deb http://packages.ros.org/ros/ubuntu xenial main"
+-[ ] deb http://packages.ros.org/ros/ubuntu wily main
+-[x] deb http://packages.ros.org/ros/ubuntu xenial main
+
