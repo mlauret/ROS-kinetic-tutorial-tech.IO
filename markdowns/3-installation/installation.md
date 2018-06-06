@@ -57,11 +57,13 @@ Now go take a coffee because the installation is very long.
 
 Rosdep is a useful command in ROS, that allow you to download all dependencies from a package.
 
-Example : a friend of you gave you a custom package he built, who work well, but he didn't gave you all the dependencies needed by is package to be builded. By running `rosdep` (not this command, but a longer command described [here](http://wiki.ros.org/rosdep)), you will directly install all dependencies without worrying to install them manually.
-
 To initialize rosdep, just run : 
 `sudo rosdep init`
 `rosdep update`
+
+Example : a friend of you gave you a custom package he built, who work well, but he didn't gave you all the dependencies needed by his package to be built. By running `rosdep` (not only this command, but a longer command described [here](http://wiki.ros.org/rosdep)), you will directly install all dependencies without worrying to install them manually.
+
+
 
 ## Step 6 : Automatize your environment
 
@@ -75,7 +77,7 @@ Which is pretty annoying and you can totally automatize this command by adding i
 
 You can simply run the command : `echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc`
 
-If you remember the step 1, you know that this command will add the `source` commands at the end of the file .bashrc
+This command will add the `source /opt/ros/kinetic/setup.bash` commands at the end of the file .bashrc.
 
 Now, everytime you open a terminal, you will always have the ROS related commands without manually sourcing the ROS environment.
 
