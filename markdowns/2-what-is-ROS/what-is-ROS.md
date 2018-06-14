@@ -8,7 +8,7 @@ Meaning : ROS is a tool, a middleware, to connect any hardware to any applicatio
 
 Yes, a middleware, a software layer between the hardware (Computer, Robot, Sensors, etc.) and the application ( [Follow an object](https://www.youtube.com/watch?v=4B_aEEaosyw), [Pilot a helicopter](https://www.youtube.com/watch?v=nMAK3uQ3rCc), [etc.](https://vimeo.com/245826128)).
 
-## Exemple
+## Example
 
 You can see ROS as a plumbing system : 
 - Your application is the Tap
