@@ -13,8 +13,9 @@ apt-get install -yq g++ libssl-dev apache2-utils curl git python make nano
 # https://gist.github.com/isaacs/579814#file-node-and-npm-in-30-seconds-sh
 mkdir ~/node-latest-install && cd $_ && \
 curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1 && \
+./configure && \
 make install && \ # takes a few minutes to build...
-curl https://www.npmjs.org/install.sh | sh
+curl -k -O -L https://www.npmjs.org/install.sh | sh
 
 
 #get nodejs turtlesim
