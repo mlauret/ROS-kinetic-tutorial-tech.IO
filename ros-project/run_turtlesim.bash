@@ -9,7 +9,7 @@ cd ..
 cp -r ../publisher_tutorial/ src/.
 catkin_make
 source devel/setup.bash
-cd web-turtlesim
+cd ../web-turtlesim
 npm start&
 echo "TECHIO> open -p 3000"
 rosrun publisher_tutorial publisher_tutorial &
