@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Install catkin tools for building
-apt -qq update && apt -y -qq install python-catkin-tools && chmod 777 *.bash
+# Install catkin tools for building and curl for docker
+apt -qq update && apt -y -qq install python-catkin-tools curl && chmod 777 *.bash
 
 
 # Install Docker CE for running Nodejs TurlteSim
