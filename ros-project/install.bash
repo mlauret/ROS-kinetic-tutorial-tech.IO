@@ -5,7 +5,7 @@ apt -qq update && apt -y -qq install python-catkin-tools curl && chmod 777 *.bas
 
 apt-get update -yq && apt-get upgrade -yq && \
 apt-get install -yq curl git nano
-curl -sL https://deb.nodesource.com/setup | bash - && \
+curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
 apt-get install -yq nodejs build-essential
 
 
