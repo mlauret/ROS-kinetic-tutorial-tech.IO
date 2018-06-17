@@ -20,4 +20,4 @@ projects:
   ros:
     root: /ros-project
     runner: ros:kinetic-ros-core
-    buildCommand: apt -qq update && apt -y -qq install python-catkin-tools && chmod 777 *.bash
+    buildCommand: ./install.bash
