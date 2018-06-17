@@ -14,3 +14,4 @@ npm start&
 sleep 1
 rosrun publisher_tutorial publisher_tutorial&
 echo "TECHIO> open -p 3000"
+sleep 120
