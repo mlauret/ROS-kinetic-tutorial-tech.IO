@@ -4,17 +4,18 @@
 apt -qq update && apt -y -qq install python-catkin-tools curl && chmod 777 *.bash
 
 
-#install nvm
-curl --silent -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
+# update and install all required packages (no sudo required as root)
+# https://gist.github.com/isaacs/579814#file-only-git-all-the-way-sh
+apt-get update -yq && apt-get upgrade -yq && \
+apt-get install -yq g++ libssl-dev apache2-utils curl git python make nano
 
-#Install nodejs and npm
-source $NVM_DIR/nvm.sh \
-    && nvm install 6 \
-    && nvm alias default 6 \
-    && nvm use default
-    
-export NODE_PATH=$NVM_DIR/v6/lib/node_modules
-export PATH=$NVM_DIR/versions/node/v6/bin:$PATH
+# install latest Node.js and npm
+# https://gist.github.com/isaacs/579814#file-node-and-npm-in-30-seconds-sh
+mkdir ~/node-latest-install && cd $_ && \
+curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1 && \
+make install && \ # takes a few minutes to build...
+curl https://www.npmjs.org/install.sh | sh
+
 
 #get nodejs turtlesim
 git clone https://github.com/mlauret/web-turtlesim
