@@ -20,4 +20,4 @@ projects:
   ros:
     root: /ros-project
     runner: ros:kinetic-ros-core
-    buildCommand: ./install.bash
+    buildCommand: chmod a+x ./install.bash && ./install.bash
