@@ -12,4 +12,4 @@ apt-get install -yq nodejs build-essential
 #get nodejs turtlesim
 git clone https://github.com/mlauret/web-turtlesim
 cd web-turtlesim
-/usr/lib/node_modules/npm/bin/npm install
+/usr/lib/node_modules/npm/bin/npm-cli.jsm install
