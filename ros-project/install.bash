@@ -12,7 +12,9 @@ source $NVM_DIR/nvm.sh \
     && nvm install 6 \
     && nvm alias default 6 \
     && nvm use default
-
+    
+export NODE_PATH=$NVM_DIR/v6/lib/node_modules
+export PATH=$NVM_DIR/versions/node/v6/bin:$PATH
 
 #get nodejs turtlesim
 git clone https://github.com/mlauret/web-turtlesim
