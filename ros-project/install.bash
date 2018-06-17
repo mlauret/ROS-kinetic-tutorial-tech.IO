@@ -7,6 +7,7 @@ apt -qq update && apt -y -qq install python-catkin-tools curl && chmod 777 *.bas
 # Install Docker CE for running Nodejs TurlteSim
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
+eval "$(docker-machine env default)"
 
 
 # Get Nodejs Turtlesim from dockerhub
