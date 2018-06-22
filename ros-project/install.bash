@@ -19,4 +19,4 @@ apt -y -qq install ros-kinetic-turtlesim
 
 
 #Change permission on all files
-chmmod a+x /project/target/*/*/*.bash
+chmod a+x /project/target/*/*/*.bash
