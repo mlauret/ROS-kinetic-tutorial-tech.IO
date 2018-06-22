@@ -1,0 +1,13 @@
+<package format="2">
+  <name>publisher_tutorial</name>
+  <version>1.0.0</version>
+  <description>
+  This package is the publisher tutorial from tech.io
+  </description>
+  <maintainer email="mathieu.lauret30@gmail.com">Mathieu Lauret</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+
+</package>

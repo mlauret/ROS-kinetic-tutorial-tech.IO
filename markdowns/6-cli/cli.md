@@ -5,8 +5,8 @@
 Before beeing a set of packages, nodes, and compilation error, your ROS environnement is a set of CLI tools used to generate workspace, packages, compile them and launch them.
 
 Here is an example of CLI for a ROS environmnent : 
-@[Example : Click run to open a terminal]({"command": "./open_terminal.bash"})
-
+@[Example : Click run to open a terminal]({"command": "./6-cli/1-simple-cli/open_terminal.bash"})
+  
 > Ok cool, I have a terminal, I feel like a hacker, now what ?
 
 You have a lot of CLI tools shipped with ROS. Here is some of them : 
@@ -16,7 +16,6 @@ You have a lot of CLI tools shipped with ROS. Here is some of them :
 - rosed
 - roscp
 - rosrun
-- rosclean
 - rosdep
 - rosrun
 - roslaunch
@@ -68,7 +67,7 @@ The common usage of these tools are :
 `rosls <package>` will list all files and directories where <package> is.
 
 Try in this terminal theses commands : 
-@[Exercise 1]({"command": "./open_terminal.bash"})
+@[Exercise 1]({"command": "./6-cli/1-simple-cli/open_terminal.bash"})
 
 Now let's see if you can find : 
 

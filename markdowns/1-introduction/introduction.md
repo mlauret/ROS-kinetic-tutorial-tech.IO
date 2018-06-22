@@ -1,7 +1,7 @@
 # Welcome!
 
 Welcome to this Robot Operating System tutorial.
-Here you will learn the basic of ROS "Kinetics Kame" version, the latest LTS (Long Term Support) version.
+Here you will learn the basic of ROS "Kinetics Kame" version, the most used ROS distribution as the time of writing.
 
 ## Will I learn robotics here ?
 
