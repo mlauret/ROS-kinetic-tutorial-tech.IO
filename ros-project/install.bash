@@ -16,3 +16,7 @@ cd web-turtlesim
 
 #Install turtlesim for messages and services
 apt -y -qq install ros-kinetic-turtlesim
+
+
+#Change permission on all files
+chmmod a+x /project/target/*/*/*.bash
