@@ -17,7 +17,7 @@ Some engineer know how to develop an Artificial Intelligence to talk to people a
 
 Robotics need all kind of people to be awesome : Robot control, artificial intelligence, Front-end , Back-end, vision processing, hardware guru, etc. 
 
-Of course, the ROS Framework is heavily intended for robots, drone and autonomous vehicle (well, [lights](https://youtu.be/vVxTIRE_5Jc) and [tractors](https://youtu.be/XrazPHtJ89M) sometimes), but the ROS community have already developped "bricks" to help you setup the part you don't know (yet).
+Of course, the ROS Framework is heavily intended for robots, drone and autonomous vehicle, but the ROS community have already developped "bricks" to help you setup the part you don't know (yet) that you can find ROS even on [lights](https://youtu.be/vVxTIRE_5Jc) and [tractors](https://youtu.be/XrazPHtJ89M) !
 
 tl;dr here you will learn the ROS framework.
 
