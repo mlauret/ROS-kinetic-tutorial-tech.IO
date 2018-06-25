@@ -7,7 +7,7 @@ mkdir src
 cd src
 catkin_init_workspace .
 cd ..
-cp -r ../1-publisher-example/ src/publisher_tutorial
+cp -r ../7-publisher/1-publisher-example/ src/publisher_tutorial
 catkin_make
 source devel/setup.bash
 rosrun publisher_tutorial publisher_tutorial &
