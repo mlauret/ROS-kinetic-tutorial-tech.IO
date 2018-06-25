@@ -5,7 +5,7 @@
 Before beeing a set of packages, nodes, and compilation error, your ROS environnement is a set of CLI tools used to generate workspace, packages, compile them and launch them.
 
 Here is an example of CLI for a ROS environmnent : 
-@[Example : Click run to open a terminal]({"command": "./6-cli/1-simple-cli/open_terminal.bash"})
+@[Example : Click run to open a terminal]({"command": "./6-cli/1-example-terminal.bash"})
   
 > Ok cool, I have a terminal, I feel like a hacker, now what ?
 
