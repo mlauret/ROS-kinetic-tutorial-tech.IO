@@ -17,5 +17,5 @@ include_directories(  #include directory for compilation
 )
 
 
-add_executable(publisher_tutorial src/publisher_tutorial.cpp)
+add_executable(publisher_tutorial src/turtlesim_tutorial.cpp)
 target_link_libraries(publisher_tutorial ${catkin_LIBRARIES})
