@@ -10,7 +10,7 @@ int main(int argc, char **argv)
   ros::NodeHandle n;
 
   //Create a std_msgs/String publisher on the topic "/chatter" with a queue length of 1000
-  ros::Publisher velocity_pub = n.advertise<geometry_msgs::Twist>("chatter", 1000);
+  ros::Publisher velocity_pub = n.advertise<geometry_msgs::Twist>("turtle1/cmd_vel", 1000);
 
   //Define the rate for publishing the message
   ros::Rate loop_rate(10);
