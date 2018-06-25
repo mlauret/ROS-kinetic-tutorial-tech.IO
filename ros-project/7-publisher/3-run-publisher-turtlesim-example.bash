@@ -6,7 +6,7 @@ mkdir src
 cd src
 catkin_init_workspace .
 cd ..
-cp -r ../publisher_tutorial/ src/.
+cp -r ../7-publisher/3-publisher-turtlesim-example/ src/publisher_tutorial
 catkin_make
 source devel/setup.bash
 cd ../web-turtlesim
