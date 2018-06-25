@@ -67,7 +67,7 @@ The common usage of these tools are :
 `rosls <package>` will list all files and directories where <package> is.
 
 Try in this terminal theses commands : 
-@[Exercise 1]({"command": "./6-cli/1-simple-cli/open_terminal.bash"})
+@[Exercise 1]({"command": "./6-cli/1-example-terminal.bash"})
 
 Now let's see if you can find : 
 
