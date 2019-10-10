@@ -63,7 +63,7 @@ it will download all mandatory package for ROS, plus a lot of usefull packages f
 
 ## Step 5 : Initialize rosdep
 
-Rosdep is a useful command in ROS, that allow you to download all dependencies from a package.
+[Rosdep](http://wiki.ros.org/rosdep) is a useful command in ROS, that allow you to download all dependencies from a package.
 
 To initialize rosdep, just run :
 `sudo rosdep init`
