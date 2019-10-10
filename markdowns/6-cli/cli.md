@@ -29,18 +29,14 @@ You have a lot of CLI tools shipped with ROS. Here is some of them :
 - rosversion
 - catkin_make
 
-There is some other tools used by ros in CLI, but since I never saw them used by anybody, and some of them are deprecated (officialy or not), I will not describe them : 
+There is some other tools used by ros in CLI, but since I never saw them used by anybody, and some of them are deprecated (officialy or not), I will not describe them :
 - rospd
 - rosd
-- rosstack 
+- rosstack
 - rosmake
 - roslocate (removed)
 - roscreate
 
-
-> Wait, where is catkin build ?
-
-Catkin Tools (catkin build) aim to be a replacement for catkin_make. It still in beta. Therefore, it's not shipped with ROS. You need to install it manually. This tutorial will give you catkin tools AND catkin_make, but only catkin tools will be used. You can try it with catkin_make (catkin_make is catkin build, etc.).
 
 
 ## Let's ros*
@@ -66,7 +62,7 @@ The common usage of these tools are :
 
 `rosls <package>` will list all files and directories where <package> is.
 
-Try in this terminal theses commands : 
+Try theses command in a terminal : 
 @[Exercise 1]({"command": "./6-cli/1-example-terminal.bash"})
 
 Now let's see if you can find : 
@@ -89,7 +85,7 @@ Now let's see if you can find :
 -[ ] genpy
 -[x] rosbuild
 
-?[What package does NOT use the package "rosparam" ?]
+?[What package does NOT exist ? (tips: you can pipe commands to [grep](https://linux.die.net/man/1/grep) with `| grep `)]
 -[ ] roswtf
 -[ ] roslaunch
 -[ ] rostest
