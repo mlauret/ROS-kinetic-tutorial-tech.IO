@@ -36,7 +36,7 @@ This will add the public key from ROS to your distribution, and will definitely 
 
 ### If this didn't worked 
 
-Try using an another keyserver : 
+Try using an another keyserver :
 `sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
 
 If this still doesn't works, you can try this command if you are begin a proxy :
@@ -117,7 +117,3 @@ Now, everytime you open a terminal, you will always have the ROS related command
 -[ ] It install my package dependencies
 -[x] It install all the dependencies of the packages in my workspace 
 -[ ] It install all the new packages from the sources.list
-
-
-
-

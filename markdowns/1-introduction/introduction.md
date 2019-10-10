@@ -3,7 +3,8 @@
 Welcome to this Robot Operating System (ROS) tutorial.
 Here you will learn the basic of ROS "Kinetics Kame" version.
 
-## Will I learn robotics here ?
+
+## Will I learn robotics here ? 
 
 You will not learn the basics of robotics here, you will learn how to use ROS. It's different.
 
@@ -21,12 +22,10 @@ Of course, the ROS Framework is heavily intended for robots, drone and autonomou
 
 tl;dr here you will learn the ROS framework.
 
-&nbsp;
 
 #### I want to deep into coding right now
 Go to Chapter 6
 
-&nbsp;
 
 ## The basics
 
