@@ -13,28 +13,27 @@ You have a lot of CLI tools shipped with ROS. Here is some of them :
 
 - roscd
 - rosls
-- rosed
-- roscp
-- rosrun
+- rospack
 - rosdep
 - rosrun
 - roslaunch
 - rosmsg
 - rosnode
-- rospack
-- rosparam
 - rossrv
-- rosservice
+- rosparam
 - rostopic
-- rosversion
+- rosservice
 - catkin_make
+- rosversion
 
-There is some other tools used by ros in CLI, but since I never saw them used by anybody, and some of them are deprecated (officialy or not), I will not describe them :
+There is some other tools used by ros in CLI, but since I never saw them used by anybody or you don't really need them, and some of them are deprecated (officialy or not), I will not describe them :
+- roscp
+- rosed
 - rospd
 - rosd
 - rosstack
 - rosmake
-- roslocate (removed)
+- roslocate
 - roscreate
 
 
@@ -62,6 +61,8 @@ The common usage of these tools are :
 
 `rosls <package>` will list all files and directories where <package> is.
 
+#### Exercise 1
+
 Try theses command in a terminal : 
 @[Exercise 1]({"command": "./6-cli/1-example-terminal.bash"})
 
@@ -85,10 +86,31 @@ Now let's see if you can find :
 -[ ] genpy
 -[x] rosbuild
 
-?[What package does NOT exist ? (tips: you can pipe commands to [grep](https://linux.die.net/man/1/grep) with `| grep `)]
+?[What package does NOT exist ?]
 -[ ] roswtf
 -[ ] roslaunch
 -[ ] rostest
 -[x] rosftw
 
+
+### Let's run some nodes
+
+To run a single node, you will need the `rosrun` command.
+But if you try to launch it right now in a CLI, it won't work. Some problem about a `Failed to contact master at [localhost:11311].  Retrying...`.
+
+To launch a single node, you will first need to launch `roscore`.
+You don't need to launch it on any CLI on this tutorial, they are already running roscore.
+
+The full Command is : `rosrun <package> <node>`
+
+For example, launching the node `teleop_twist_keyboard.py` from the package `teleop_twist_keyboard` :
+
+`rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+
+Every single node are launched like this, with some special arguments :
+
+- You can add parameters to rosrun commands `rosrun package node _param:=value`
+- You can remap topics (change topics name) : `rosrun package node old_topic_name:=new_topic_name`
+
+(Be carefull, parameter begin with a `_` while topic remapping don't)
 
