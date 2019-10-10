@@ -37,7 +37,7 @@ This will add the public key from ROS to your distribution, and will definitely 
 ### If this didn't worked 
 
 Try using an another keyserver :
-`sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
+`sudo apt-key adv --keyserver 'hkp://pgp.mit.edu:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
 
 If this still doesn't works, you can try this command if you are begin a proxy :
 `curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -`
