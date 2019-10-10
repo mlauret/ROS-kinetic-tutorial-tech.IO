@@ -9,7 +9,7 @@ So, open a terminal and follow these step :
 
 ## Step 1 : Link your distribution to the ROS package repository
 
-If you don't know, all linux distribution works with packages repositories. It's like the "Google play store" of Linux (more free). But in the case of linux, everyone can create their own store to publish application. By default, you only have access to the main ubuntu repositories, with secutiry update and many useful application.
+If you don't know, most linux distribution works with packages repositories. It's like the "Google play store" of Linux (more free). But in the case of linux, everyone can create their own store to publish application. By default, you only have access to the main ubuntu repositories, with security update and many useful application.
 
 All ROS developper send their application to a unique store, the ROS repository. To add it in Linux, you need to create a `sources.list` file in your linux distribution.
 
@@ -22,25 +22,34 @@ This complicated line will :
 1. Give you the superuser right to write file in critical system directories with `sudo`
 2. Launch a shell command with `sh -c`
 3. The shell command is `echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list`, it will write the line "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" in /etc/apt/sources.list.d/ros-latest.list
-4. But there is a catch : ` $(lsb_release -sc) ` will expand and will change to your distribution name, in our case "xenial" (codename for ubuntu 16.04) or "wily" (for 15.10)
+4. But there is a catch : ` $(lsb_release -sc) ` will expand (it's a subcommand) and will change to your distribution name, in our case "xenial" (codename for ubuntu 16.04) or "wily" (for 15.10)
 
 And that all for linking you linux to the ROS package repository.
 
 ## Step 2 : Get the public key for updating your package
 
-Linux will throw an error if you want to update package from the ROS package repository, because even if you added them, linux don't trust them because they may be compromised by a malicious hacker. You need to add the ROS package repository public key, which is a key used to check if the package is signed by ROS or by an hacker (which will throw an error).
+Linux will throw an error if you want to update package from the ROS package repository, because even if you added them, linux don't trust them because they may be compromised by a malicious hacker. You need to add the ROS package repository public key, which is a key used to check if the packages are signed by ROS.
 
-You can just launch `sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116`
+You can just launch `sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
 
 This will add the public key from ROS to your distribution, and will definitely let you install ROS packages from the repository.
 
+### If this didn't worked 
+
+Try using an another keyserver : 
+`sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654`
+
+If this still doesn't works, you can try this command if you are begin a proxy :
+`curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xC1CF6E31E6BADE8868B172B4F42ED6FBAB17C654' | sudo apt-key add -`
+
+They will all do the same thing.
+
 ## Step 3 : Update your package list
 
-Because linux know every installable application in a list with the command `apt-get` (or simply `apt`), you need to tell him to update the package list every time you add a repository or from time to time when a new package is available in the repository.
+Because linux know every installable application in a list with the command `apt-get` (or simply `apt`), you need to tell him to update the packages lists every time you add a repository or from time to time when a new package is available in the repository.
 
-Just run the command `sudo apt-get update` and the package list will update will all ROS packages.
+Just run the command `sudo apt-get update` and the apt will know all packages available.
 
-I also recommand you to run this command every month, to get the list of all new packages or updatable application.
 
 ## Step 4 : Install ROS
 
@@ -49,15 +58,14 @@ Now, you can install ros with the command :
 
 `sudo apt-get install ros-kinetic-desktop-full`
 
-it will download all mandatory package for ROS, plus a lot of usefull packages for debugging and simulating robot.
+it will download all mandatory package for ROS, plus a lot of usefull packages for debugging and simulating robots.
 
-Now go take a coffee because the installation is very long.
 
 ## Step 5 : Initialize rosdep
 
 Rosdep is a useful command in ROS, that allow you to download all dependencies from a package.
 
-To initialize rosdep, just run : 
+To initialize rosdep, just run :
 `sudo rosdep init`
 `rosdep update`
 
@@ -73,14 +81,13 @@ Right now, you can use ROS package and build your own. But everytime you open a 
 
 Which is pretty annoying and you can totally automatize this command by adding it in your `.bashrc`.
 
-.bashrc is a file in Ubuntu that  is launched everytime a new terminal is opened. It contains various commands related to the autocompletion (with "tab-tab"), terminal color and many other things. Don't touch it when you don't know what you are doing.
+.bashrc is a file in Ubuntu that is launched everytime a new terminal is opened. It contains various commands related to the autocompletion (with "tab-tab"), terminal color and many other things. Don't touch it when you don't know what you are doing.
 
 You can simply run the command : `echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc`
 
 This command will add the `source /opt/ros/kinetic/setup.bash` commands at the end of the file .bashrc.
 
 Now, everytime you open a terminal, you will always have the ROS related commands without manually sourcing the ROS environment.
-
 
 
 ## Quizz time
